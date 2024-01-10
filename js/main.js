@@ -6,7 +6,7 @@ const userAge = document.getElementById ("age-select");
 const sendButton = document.getElementById ("invia");
 
 let valoreEta;
-
+let name;
 
 
 // Devo inserire le const per i dati finali
@@ -37,7 +37,16 @@ sendButton.addEventListener ("click", function () {
         priceTicket = parzialTicket;
     }
 
-    // Comunico all'utente la cifra MA NON HO LA PIU' PALLIDA IDEA DI COME SI FA
+    // Comunico all'utente i dati del biglietto
+    
+    document.getElementById("output-nome").innerHTML = userName;
+
+    document.getElementById("output-offerta").innerHTML = "piaushdgf";
+    document.getElementById("output-carrozza").innerHTML = "69";
+    document.getElementById("output-codice").innerHTML = "MN674";
+
+
     document.getElementById("output-costo").innerHTML = priceTicket.toFixed(2) + " €";
+
 
 });
