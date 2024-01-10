@@ -6,6 +6,11 @@ const userAge = document.getElementById ("age-select")
 const sendButton = document.getElementById ("invia");
 
 
+
+
+// Devo inserire le const per i dati finali
+
+
 sendButton.addEventListener ("click", function () {
     const valoreKm = parseInt(userKm.value);
     console.log(valoreKm);
@@ -20,45 +25,19 @@ sendButton.addEventListener ("click", function () {
     let sconto20 = parzialTicket * 0.2;
     let sconto40 = parzialTicket * 0.4;
 
-    //non so se serva...
+    //non so se serva o meno...
     let priceTicket = 0;
 
-    if (age < 18) {
+    if (age == "under") {
         priceTicket = parzialTicket - sconto20;
-    } else if (age > 65) {
+    } else if (age == "over") {
         priceTicket = parzialTicket - sconto40;
     } else {
         priceTicket = parzialTicket;
     }
     
+
+    // Comunico all'utente la cifra MA NON HO LA PIU' PALLIDA IDEA DI COME SI FA
+    document.getElementById ("output-costo").innerHTML = priceTicket.toFixed(2) + " €";
+
 });
-
-
-
-
-
-// // Il calcolo parziale del biglietto
-// const parzialTicket = km * 0.21;
-// console.log(parzialTicket);
-
-
-// // Applico sconto se rispetta alcuni parametri
-// let sconto20 = parzialTicket * 0.2;
-// let sconto40 = parzialTicket * 0.4;
-
-
-// // faccio uscire la variabile dalla condizione di se: SCOPE
-// let priceTicket = 0;
-
-// // Calcolo del prezzo del biglietto
-// if (age < 18) {
-//     priceTicket = parzialTicket - sconto20;
-// } else if (age > 65) {
-//     priceTicket = parzialTicket - sconto40;
-// } else {
-//     priceTicket = parzialTicket;
-// }
-
-
-// // Comunico all'utente la cifra
-// document.getElementById ("prezzo").innerHTML = priceTicket.toFixed(2) + " €";
