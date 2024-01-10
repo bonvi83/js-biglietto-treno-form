@@ -21,7 +21,7 @@
         <form>
             <h2>CALCOLA IL PRESSO DEL TUO BIGLIETTO</h2>
             <div class="d-flex">
-                <div class="nome">
+                <div class="nomeinput">
                     <label>Nome e Cognome</label> <br>
                     <input type="text" name="" id="name">
                 </div>
@@ -29,8 +29,8 @@
                     <label>Km da poercorrere</label> <br>
                     <input type="text" name="" id="name">
                 </div>
-                <div class="età">
-                    <label>Fascia di Età</label>
+                <div class="fasciaetà">
+                    <label>Fascia di Età</label> <br>
                     <select name="age" id="age-select">
                         <option value="">Seleziona un opzione:</option>
                         <option value="under">Minorenne</option>
@@ -38,12 +38,32 @@
                         <option value="over">Over 65</option>
                     </select>
                 </div>
-            </form>
-                
-        </div>
+            </div>
+
+            <div class="buttons">
+                <button type="button" id="invia">Genera</button>
+                <input type="reset">
+            </div>
+        </form>
     </section>
+
     <section>
         <h2>IL TUO BIGLIETTO</h2>
+        <div>
+            <h3>DETTAGLIO DEI PASSEGGERI</h3>
+            <div class="d-flex">
+                <div class="nomeoutput">Nome del Passeggero
+                </div>
+                <div class="offerta">Offerta
+                </div>
+                <div class="carrozza">Carrozza
+                </div>
+                <div class="codice">Codice CP
+                </div>
+                <div class="costo">Costo del biglietto
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- link a javascript -->
