@@ -8,10 +8,6 @@ const sendButton = document.getElementById ("invia");
 let valoreEta;
 let name;
 
-
-// Devo inserire le const per i dati finali
-
-
 sendButton.addEventListener ("click", function () {
     const valoreKm = parseInt(userKm.value);
     console.log(valoreKm);
@@ -39,14 +35,11 @@ sendButton.addEventListener ("click", function () {
 
     // Comunico all'utente i dati del biglietto
     
-    document.getElementById("output-nome").innerHTML = userName;
+    document.getElementById("output-nome").innerHTML = userName.value;
 
     document.getElementById("output-offerta").innerHTML = "piaushdgf";
     document.getElementById("output-carrozza").innerHTML = "69";
     document.getElementById("output-codice").innerHTML = "MN674";
 
-
     document.getElementById("output-costo").innerHTML = priceTicket.toFixed(2) + " €";
-
-
 });
