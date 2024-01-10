@@ -20,6 +20,7 @@ sendButton.addEventListener ("click", function () {
     let sconto20 = parzialTicket * 0.2;
     let sconto40 = parzialTicket * 0.4;
 
+    //non so se serva...
     let priceTicket = 0;
 
     if (age < 18) {
