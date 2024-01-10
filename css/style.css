@@ -1,5 +1,6 @@
 :root {
     --primary-color:#b91450;
+    --secondary-color:white;
 }
 
 /* funzioni reset */
@@ -12,5 +13,12 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--primary-color);
+}
+
+h2 {
     color: white;
+}
+
+.primaparte, .secondaparte {
+    background-color: var(--secondary-color);
 }
