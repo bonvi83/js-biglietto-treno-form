@@ -9,6 +9,11 @@ body {
     background-color: var(--primary-color);
 }
 
+section {
+    width: 1080px;
+    margin: auto;
+}
+
 h2 {
     color: white;
 }
